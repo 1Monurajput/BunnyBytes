@@ -9,7 +9,7 @@ BunnyBytes is a simple yet engaging typing speed test website that lets you meas
 ✅ Minimal & Fast – No unnecessary distractions, just pure typing fun.
 
 🚀 Live Demo
-Check out BunnyBytes in action: 🔗 Click Here (Replace with live link)
+Check out BunnyBytes in action: 🔗https://bunny-bytes.netlify.app/
 
 🛠️ Technologies Used
 HTML5 – Structure of the site

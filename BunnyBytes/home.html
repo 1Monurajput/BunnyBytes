@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="display: flex; justify-content: center;">
+  <div id="home" style="position: relative; width: 1280px;">
+    <div id="page" style="position: relative;">
+      <div style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+          ">
+        <h5 class="caption">Typing Speed Test</h5>
+        <h3 class="title">Test Your Typing Skills</h3>
+
+        <div style="display: flex; justify-content: space-evenly; width: 60%">
+          <div id="progress">
+            <div class="time">
+              <h4 class="num" id="time">60</h4>
+              <h4 class="string">seconds</h4>
+            </div>
+          </div>
+          <div style="display: flex; gap: 25px">
+            <div class="speed">
+              <h4 class="num" id="word">0</h4>
+              <h4 class="string">words/min</h4>
+            </div>
+            <div class="speed">
+              <h4 class="num" id="chars">0</h4>
+              <h4 class="string">chars/min</h4>
+            </div>
+            <div class="speed">
+              <h4 class="num" id="accuracy">0</h4>
+              <h4 class="string">% Accuracy</h4>
+            </div>
+          </div>
+        </div>
+
+        <div style="
+              width: 80%;
+              border: 1px solid gray;
+              border-radius: 20px;
+              overflow: hidden;
+              margin-top: 50px;
+              position: relative;
+              box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            ">
+          <div class="para">
+            <div id="output" class="paraText"></div>
+            <div id="hidden-output"></div>
+            <textarea id="textarea" autofocus></textarea>
+            <div id="label">Start Typing...</div>
+          </div>
+          <div class="cursor"></div>
+        </div>
+      </div>
+
+      <div id="result"
+        style="width: 100%; background-color: rgba(0, 0, 0, 0.284);  justify-content: center; align-items: center; position: absolute; top: 0; height: 100%;">
+        <div style="
+            width: 50%;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: var(--backGroundColor);
+          ">
+          <div style="
+              width: 100%;
+              display: flex;
+              justify-content: end;
+              padding-right: 20px;
+              padding-top: 10px;
+              cursor: pointer;
+            ">
+            <h4 onclick="refreshPage()" style="
+                padding: 5px;
+                border-radius: 50%;
+                color: gray;
+                font-weight: 300;
+                background-color: white;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">
+              <i class="fa-solid fa-xmark"></i>
+            </h4>
+          </div>
+          <div style="display: flex; gap: 50px; padding: 20px 30px">
+            <div style="width: 50%">
+              <img id="img" src="" alt="dino" style="width: 100%; object-fit: cover; object-position: center" />
+            </div>
+            <div style="width: 50%; padding-right: 10px">
+              <h1 id="title2"></h1>
+              <h3 id="resultPara" style="color: gray; font-weight: 400; margin-top: 10px">
+
+              </h3>
+            </div>
+          </div>
+          <div style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 20px;
+              background-color: white;
+            ">
+            <button id="btn" type="button" onclick="refreshPage()">Try Again</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="wel"
+        style="width: 100%; background-color: rgba(0, 0, 0, 0.284); display: flex; justify-content: center; align-items: center; position: absolute; top: 0; height: 100%; ">
+        <div style="width: 50%;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: var(--backGroundColor); display: flex;
+        justify-content: center; flex-direction: column; align-items: center; padding: 20px; padding-bottom: 40px;">
+          <div>
+            <img id="welImg" src="" alt="" style="height: 350px; object-fit: cover; object-position: center;">
+          </div>
+          <h2 style="text-align: center; font-size: 20px; font-weight: 400;">Welcome to <span style="background-color:#ff009f; padding-left:8px; padding-right:8px; border-radius:6px; color:black; font-weight:500;">BunnyBytes</span></h2>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/1Monurajput/BunnyBytes">
+      <div
+      style="border: 1px solid gray ; border-radius: 10px; padding: 2px 8px; width: max-content;position: absolute; bottom: 3%; right: 2%; background-color: white;">
+      ❤️ BunnyBytes</div>
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
